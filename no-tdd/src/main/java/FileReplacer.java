@@ -6,11 +6,11 @@ import static java.nio.charset.Charset.defaultCharset;
 import static java.nio.file.Files.readAllBytes;
 import static java.nio.file.Paths.get;
 
-public class StringReplacer {
+public class FileReplacer {
 
     private String filename;
 
-    public StringReplacer(String filename) {
+    public FileReplacer(String filename) {
         this.filename = filename;
     }
 
