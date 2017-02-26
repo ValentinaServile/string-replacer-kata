@@ -1,7 +1,8 @@
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Map;
+
+import static java.nio.file.Files.readAllBytes;
+import static java.nio.file.Paths.get;
 
 public class FileReplacer {
 
@@ -17,7 +18,7 @@ public class FileReplacer {
     }
 
     private String fileContents() throws IOException {
-        byte[] bytes =  Files.readAllBytes(Paths.get(filename));
+        byte[] bytes =  readAllBytes(get(filename));
         return new String(bytes);
     }
 }
